@@ -14,6 +14,11 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+img {
+    width: 100%;
+    text-align: center;
+}
+
 h1{
     font-family:'Dancing Script', cursive;
     text-align: center;
@@ -58,49 +63,74 @@ main{
     margin: 2vh;
     text-align: center;
 }
+
 .destaque{
     overflow: hidden;
-    height: 200px;
-    width: 90vw;
-    margin: 2%;
+    height: 220px;
+    width: 100%;
+    margin-bottom: 60px;
     text-align: center;
+}
+
+.apresentacao{
+    height: 35px;
+}
+
+.apresentacao div{
+    height: 15px;
+    border-bottom: solid 1px var(--color-crimson);
+    text-align: center;
+}
+
+.apresentacaoTexto{
+    padding-bottom: 15px;
+    font-weight: bold;
+    width: 300px;
+    font-size: 25px;
+    background-color: var(--color-champanhe);
+    margin: 0 auto;
+    
+}
+
+#destaque{
+    width: 100%;
+    max-width: 80vw;
+
 }
 
 .exemplo{
     display: grid;
-    grid-template:  120px 120px / 25% 25% 50%;
+    grid-template:  150px 150px / 25% 25% 50%;
     grid-template-areas: "img1 img2 grande" "img3 img4 grande";
-    overflow: hidden;
 }
-.div1{
-    grid-area: "img1";
+
+.exemploImagem{
+    overflow: hidden;
+    margin: 2px;
+}
+
+.exemplo p{
+    display: none;
+}
+
+.exemplo p:hover{
+    display: block;
+}
+
+.exemplo img:hover{
+    padding-top: 30px;
+    opacity: 45%;
+}
+
+.exemploGrande{
+    height: 296px;
+    margin: 2px;
     overflow: hidden;
 }
 
-.div2{
-    grid-area: "img2";
-    overflow: hidden;
+#imggrande{
+    height: 296px;
+    width: 100%;
+
 }
 
-.div3{
-    grid-area: "img3";
-    overflow: hidden;
-}
-
-.div4{
-    grid-area: "img4";
-    overflow: hidden;
-}
-
-.divgrande{
-    grid-area: "grande";
-    
-    
-}
-
-img {
-    
-    width: inherit;
-    overflow: hidden;
-    text-align: center;
-}
